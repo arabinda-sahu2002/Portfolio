@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+    }
+  
+    .navbar li {
+      margin: 0.5rem 0;
+    }
+  
+    .skills-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .social-icons .icon {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  
