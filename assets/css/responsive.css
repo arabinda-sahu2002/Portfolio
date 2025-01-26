@@ -1,19 +1,59 @@
-@media (max-width: 768px) {
-    .navbar {
-      flex-direction: column;
-    }
-  
-    .navbar li {
-      margin: 0.5rem 0;
-    }
-  
-    .skills-container {
-      flex-direction: column;
-      align-items: center;
-    }
-    .social-icons .icon {
-      width: 24px;
-      height: 24px;
-    }
+@media (max-width: 1024px) {
+  /* Navbar adjustment */
+  .navbar {
+      flex-direction: row;
+      justify-content: space-between;
   }
   
+  .navbar li {
+      margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar adjustment for smaller screens */
+  .navbar {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .navbar li {
+      margin: 1rem 0;
+  }
+
+  .skills-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-icons .icon {
+      width: 32px;
+      height: 32px;
+  }
+
+  /* Skill box sizing adjustments */
+  .skill {
+      flex: 1 1 90%; /* Make skill boxes take more space on smaller screens */
+      max-width: 90%;
+      margin: 1.5rem 0; /* Increased margin for spacing */
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+      font-size: 14px; /* Smaller font size for mobile */
+  }
+
+  .navbar a {
+      padding: 0.5rem;
+  }
+
+  .skills {
+      padding: 2rem 1rem; /* Less padding on mobile */
+  }
+
+  .social-icons .icon {
+      width: 28px;
+      height: 28px;
+  }
+}
